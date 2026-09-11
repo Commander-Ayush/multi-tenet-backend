@@ -2,6 +2,7 @@ package com.growthmul.app.lawnmover_fs.service;
 
 import com.growthmul.app.lawnmover_fs.dto.LoginResponse;
 import com.growthmul.app.lawnmover_fs.entity.AdminUser;
+import com.growthmul.app.lawnmover_fs.entity.Company;
 import com.growthmul.app.lawnmover_fs.repository.AdminUserRepository;
 import com.growthmul.app.lawnmover_fs.security.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,12 +17,18 @@ public class AuthService {
     @Autowired private AdminUserRepository adminUserRepo;
     @Autowired private PasswordEncoder passwordEncoder;
     @Autowired private JwtService jwtService;
+    @Autowired private PublicTenantResolver tenantResolver;
 
-    public LoginResponse login(String email, String password) {
+    public LoginResponse login(String origin, String email, String password) {
+        Company company = tenantResolver.resolve(origin); // throws 400/404 on missing/unknown domain
+
         AdminUser user = adminUserRepo.findByEmail(email)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Incorrect email or password"));
 
-        if (!passwordEncoder.matches(password, user.getPasswordHash())) {
+        boolean passwordOk = passwordEncoder.matches(password, user.getPasswordHash());
+        boolean domainOk = user.getCompany().getId().equals(company.getId());
+
+        if (!passwordOk || !domainOk) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Incorrect email or password");
         }
 
