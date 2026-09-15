@@ -29,4 +29,14 @@ public class Company {
     // Store lowercase, no "www.", no protocol — e.g. "clienta.com".
     @Column(unique = true)
     private String domain;
+
+    // ── Schedule availability rules ──
+    // Drives the admin Schedule page's auto-status calculation: a day's
+    // effective status is "full" once its booking count reaches
+    // fullThreshold, "busy" once it reaches busyThreshold, else
+    // "avail" — unless a ScheduleOverride exists for that date, which
+    // always wins. See ScheduleService.computeEffectiveStatus.
+    private boolean autoScheduleEnabled = true;
+    private int busyThreshold = 3;
+    private int fullThreshold = 6;
 }
