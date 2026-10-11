@@ -5,30 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e410d932-85c6-4f1c-953b-170945890d0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/AboutSettingsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/AboutSettingsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/GalleryImageDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/GalleryImageRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/entity/GalleryImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/repository/GalleryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/service/AdminCompanyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/service/GalleryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/config/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/config/DataInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/BookingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/BookingDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/CompanyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/CompanyDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/entity/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/repository/ReviewRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/service/ReviewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/config/DataInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/config/DataInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/controller/ReviewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/controller/ReviewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/dto/BookingDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/dto/BookingDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/dto/CompanyDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/dto/CompanyDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/entity/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/entity/Company.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/repository/ReviewRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/repository/ReviewRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/service/ReviewService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/service/ReviewService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,36 +44,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.LawnMoverFsApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Downloads/lawnmovers-backend-rest&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.LawnMoverFsApplication.executor": "Run",
+    "git-widget-placeholder": "Merging main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/HP/Downloads/lawnmovers-backend-rest",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.sync",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;GitIgnore&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="LawnMoverFsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="envFilePaths">
