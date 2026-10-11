@@ -38,10 +38,10 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.EC2_HOST }}
-          username: ubuntu
+          username: deployer
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd ~/lawnmovers
+            cd /opt/growth-multiplier
             docker compose pull
             docker compose up -d --remove-orphans
             docker image prune -f
