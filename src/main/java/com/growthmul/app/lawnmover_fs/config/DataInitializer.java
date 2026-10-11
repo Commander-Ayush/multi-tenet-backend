@@ -33,9 +33,11 @@ public class DataInitializer implements ApplicationRunner {
         demo.setFoundedYear(2015);
         demo.setYardsServed(4800);
         demo.setYearsExperience(11);
-        demo.setPhone(8004736288L);
+        demo.setPhone("8004736288");
         demo.setEmail("hello@greencut.com");
         demo.setDomain(DEV_DOMAIN);
+        demo.setAboutText("Providing top-tier lawn care and peace of mind since 2015.");
+        demo.setAddress("100 Technology Dr, Suite 400");
 //        companyRepo.save(demo);
 
         AdminUser admin = new AdminUser();

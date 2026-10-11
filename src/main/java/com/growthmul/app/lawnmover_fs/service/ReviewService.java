@@ -1,11 +1,15 @@
 package com.growthmul.app.lawnmover_fs.service;
 
 import com.growthmul.app.lawnmover_fs.dto.ReviewDto;
+import com.growthmul.app.lawnmover_fs.dto.ReviewPageDto;
 import com.growthmul.app.lawnmover_fs.dto.ReviewSubmitRequest;
 import com.growthmul.app.lawnmover_fs.entity.Company;
 import com.growthmul.app.lawnmover_fs.entity.Review;
 import com.growthmul.app.lawnmover_fs.repository.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
@@ -20,11 +24,27 @@ public class ReviewService {
 
     // ───────────────────────── PUBLIC ─────────────────────────
 
+    // Kept for anything that still wants the full approved list in one
+    // shot (e.g. the summary strip's top couple of reviews).
     public List<ReviewDto> getApprovedReviews(String origin) {
         Company company = tenantResolver.resolve(origin);
         return reviewRepo
                 .findByCompanyIdAndApprovedTrueOrderBySubmittedAtDesc(company.getId())
                 .stream().map(ReviewDto::from).toList();
+    }
+
+    // Paginated variant backing the "Show All" reviews view — pulls one
+    // page (10 by default) at a time instead of the whole table, so a
+    // business with hundreds of reviews can't blow up the response or
+    // the DOM on a single request.
+    public ReviewPageDto getApprovedReviewsPage(String origin, int page, int size) {
+        Company company = tenantResolver.resolve(origin);
+        int safePage = Math.max(page, 0);
+        int safeSize = Math.min(Math.max(size, 1), 50); // hard ceiling so ?size=99999 can't be used to bypass paging
+        Pageable pageable = PageRequest.of(safePage, safeSize);
+        Page<Review> result = reviewRepo
+                .findByCompanyIdAndApprovedTrueOrderBySubmittedAtDesc(company.getId(), pageable);
+        return ReviewPageDto.from(result);
     }
 
     public void submitReview(String origin, ReviewSubmitRequest req) {

@@ -21,8 +21,22 @@ public class Company {
     private Integer foundedYear;
     private Integer yardsServed;
     private Integer yearsExperience;
-    private Long phone;
+
+    // Free text, not digits-only — admin can enter "+1 (800) 555-0199",
+    // an extension, etc. Rendered as-is on the storefront, never parsed.
+    private String phone;
+
     private String email;
+
+    // Shown in the storefront's About section (the paragraph under the
+    // heading) and editable from the admin About & Contact page.
+    @Column(length = 2000)
+    private String aboutText;
+
+    // Also shown/edited on the admin About & Contact page. Deliberately
+    // separate from `city` (used elsewhere for the "serving X since Y"
+    // copy) since this is a full mailing address.
+    private String address;
 
     // Public storefront requests are matched to a Company by this column,
     // read from the browser's Origin header (see PublicTenantResolver).

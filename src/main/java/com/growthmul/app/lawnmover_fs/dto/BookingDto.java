@@ -14,6 +14,7 @@ public class BookingDto {
     private LocalDate preferredDate;
     private LocalDateTime submittedAt;
     private boolean completed;
+    private String notes;
 
     public static BookingDto from(BookingRequest entity) {
         BookingDto dto = new BookingDto();
@@ -26,6 +27,7 @@ public class BookingDto {
         dto.preferredDate = entity.getPreferredDate();
         dto.submittedAt = entity.getSubmittedAt();
         dto.completed = entity.isCompleted();
+        dto.notes = entity.getNotes();
         return dto;
     }
 
@@ -38,4 +40,5 @@ public class BookingDto {
     public LocalDate getPreferredDate() { return preferredDate; }
     public LocalDateTime getSubmittedAt() { return submittedAt; }
     public boolean isCompleted() { return completed; }
+    public String getNotes(){ return notes;}
 }

@@ -10,8 +10,10 @@ public class CompanyDto {
     private Integer foundedYear;
     private Integer yardsServed;
     private Integer yearsExperience;
-    private Long phone;
+    private String phone;
     private String email;
+    private String aboutText;
+    private String address;
 
     public static CompanyDto from(Company c) {
         CompanyDto dto = new CompanyDto();
@@ -22,6 +24,8 @@ public class CompanyDto {
         dto.yearsExperience = Year.now().getValue() - c.getFoundedYear();
         dto.phone = c.getPhone();
         dto.email = c.getEmail();
+        dto.aboutText = c.getAboutText();
+        dto.address = c.getAddress();
         return dto;
     }
 
@@ -30,6 +34,8 @@ public class CompanyDto {
     public Integer getFoundedYear() { return foundedYear; }
     public Integer getYardsServed() { return yardsServed; }
     public Integer getYearsExperience() { return yearsExperience; }
-    public Long getPhone() { return phone; }
+    public String getPhone() { return phone; }
     public String getEmail() { return email; }
+    public String getAboutText() { return aboutText; }
+    public String getAddress() { return address; }
 }

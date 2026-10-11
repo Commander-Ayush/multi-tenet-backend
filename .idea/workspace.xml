@@ -5,12 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e410d932-85c6-4f1c-953b-170945890d0d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/AboutSettingsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/AboutSettingsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/GalleryImageDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/GalleryImageRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/entity/GalleryImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/repository/GalleryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/service/AdminCompanyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/service/GalleryService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/controller/BookingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/controller/BookingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/config/DataInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/config/DataInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/BookingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/BookingDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/CompanyDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/dto/CompanyDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/entity/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/repository/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/growthmul/app/lawnmover_fs/service/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/config/DataInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/config/DataInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/controller/ReviewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/controller/ReviewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/dto/BookingDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/dto/BookingDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/dto/CompanyDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/dto/CompanyDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/entity/Company.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/entity/Company.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/repository/BookingRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/repository/BookingRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/repository/ReviewRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/repository/ReviewRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/service/ReviewService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/growthmul/app/lawnmover_fs/service/ReviewService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +176,19 @@
       <workItem from="1788980161805" duration="1934000" />
       <workItem from="1789019208143" duration="282000" />
       <workItem from="1789051430089" duration="1838000" />
+      <workItem from="1789452598128" duration="3698000" />
+      <workItem from="1789545625804" duration="725000" />
+      <workItem from="1789573316923" duration="2133000" />
+      <workItem from="1789612661183" duration="1452000" />
+      <workItem from="1789639702423" duration="2593000" />
+      <workItem from="1789703512330" duration="699000" />
+      <workItem from="1789744213140" duration="1136000" />
+      <workItem from="1789800371718" duration="595000" />
+      <workItem from="1789997907435" duration="300000" />
+      <workItem from="1790099283651" duration="129000" />
+      <workItem from="1790141417461" duration="207000" />
+      <workItem from="1790144270684" duration="134000" />
+      <workItem from="1791665686253" duration="444000" />
     </task>
     <servers />
   </component>
